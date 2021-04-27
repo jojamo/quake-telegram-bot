@@ -1,0 +1,2 @@
+# Run a job every minute to execute bash script (script checks for changes in quake demo folder)
+* * * * * /home/ubuntu/nquakesv/send_results.sh
