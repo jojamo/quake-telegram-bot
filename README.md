@@ -1,4 +1,4 @@
-# nullquake_bot
+# quake-telegram-bot
 Simple quake bot for reporting match results via a telegram group bot for nQuake servers.
 Users that join the telegram bot group will receive match results once a match has ended via telegram.
 
@@ -53,5 +53,6 @@ AWS features used:
   - Observe that the match results are posted to your telegram bot
 
 # Future considerations:
-If I were to revisit this in future I would automate most of the of the steps above such as: Setting up the AWS environment and creating a bash installation file to prompt the user for required ID's.
-I would also create a sign-up lambda function that would receive chat_id's and save them to a table. Then modify the notification lambda to send results to a list of chat id's, Because as of right now the notification lambda can only send messages to one chat.
+  - If I were to revisit this in future I would automate most of the of the steps above such as: Setting up the AWS environment and creating a bash installation file to prompt the user for required ID's.
+
+  - I would also create a sign-up lambda function that would receive chat_id's and save them to a table. Then modify the notification lambda to send results to a list of chat id's, Because as of right now the notification lambda can only send messages to one chat.
